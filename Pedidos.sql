@@ -1,0 +1,13 @@
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE ItensPedido;
+TRUNCATE TABLE Pedidos;
+SET FOREIGN_KEY_CHECKS = 1;
+
+INSERT INTO Pedidos (Clientes_id, DataPedido) VALUES
+(1, '2026-09-01'),
+(2, '2026-09-03'),
+(2, '2026-09-10'),
+(3, '2026-09-05'),
+(4, '2026-09-07'),
+(5, '2026-09-12');
+SELECT * FROM Pedidos;
